@@ -1,24 +1,40 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
+import { useEffect } from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { SettingsProvider, useSettings } from '../lib/SettingsContext';
+import { getRaceSchedule } from '../lib/api';
+import { cancelAllNotifications, requestNotificationPermission, scheduleRaceNotifications } from '../lib/notifications';
 
-import { useColorScheme } from '@/hooks/use-color-scheme';
+function AppStack() {
+  const { settings } = useSettings();
 
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
-
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
+  useEffect(() => {
+    async function setupNotifications() {
+      if (!settings.notifications) {
+        await cancelAllNotifications();
+        return;
+      }
+      const hasPermission = await requestNotificationPermission();
+      if (!hasPermission) return;
+      const races = await getRaceSchedule('2026');
+      await scheduleRaceNotifications(races, settings.timezone, settings.language === 'en');
+    }
+    setupNotifications();
+  }, [settings.notifications, settings.timezone, settings.language]);
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    </Stack>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <SafeAreaProvider>
+      <SettingsProvider>
+        <AppStack />
+      </SettingsProvider>
+    </SafeAreaProvider>
   );
 }
