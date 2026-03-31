@@ -1,50 +1,160 @@
-# Welcome to your Expo app 👋
+# F1HUB Mobile 🏎️
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<div align="center">
+  <img src="assets/images/icon.png" width="120" alt="F1 Hub Logo" />
+  
+  <h3>Aplikasi F1 terlengkap untuk penggemar Formula 1 Indonesia</h3>
 
-## Get started
+  ![Version](https://img.shields.io/badge/version-1.4.8-e10600?style=flat-square)
+  ![Platform](https://img.shields.io/badge/platform-Android-brightgreen?style=flat-square)
+  ![Built with](https://img.shields.io/badge/built%20with-Expo-000020?style=flat-square&logo=expo)
+  ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
-1. Install dependencies
+  [📥 Download APK](#download) · [✨ Fitur](#fitur) · [🛠️ Development](#development)
+</div>
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 📥 Download
 
-   ```bash
-   npx expo start
-   ```
+| Versi | Tanggal | Link |
+|-------|---------|------|
+| v1.4.8 (Latest) | 30 Mar 2026 | [Download APK](https://github.com/leviar/f1-hub-mobile/releases/latest) |
 
-In the output, you'll find options to open the app in a
+> **Install:** Aktifkan *"Install from unknown sources"* di pengaturan HP sebelum install.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## ✨ Fitur
 
-## Get a fresh project
+### 🏠 Home
+- **Next Race Card** — countdown live ke race berikutnya
+- **Cuaca sirkuit** real-time via Open-Meteo API
+- **Driver Standings** top 5 dengan warna tim
+- **Race Berikutnya** dengan jadwal WIB/WITA/WIT
+- **F1 Glossary** preview — istilah F1 untuk pemula
 
-When you're ready, run:
+### 🏆 Klasemen
+- Driver Standings & Constructor Standings 2026
+- Data real-time dari Jolpica API
+- Bendera negara setiap driver & tim
+- Highlight driver favorit ⭐
+
+### 📅 Kalender
+- Jadwal lengkap 23 race musim 2026
+- Filter: Semua / Akan Datang / Selesai
+- Tap race untuk detail lengkap
+
+### 🏁 Race Detail
+- Jadwal semua sesi (FP1, FP2, FP3, Qualifying, Race)
+- Hasil Race dengan podium 🥇🥈🥉
+- Hasil Qualifying (Q1/Q2/Q3)
+- Hasil Sprint & Sprint Qualifying (khusus sprint weekend)
+- Cuaca sirkuit real-time
+- Status sesi (selesai / akan datang)
+
+### 👤 Driver
+- Profil lengkap semua driver 2026
+- **Statistik Karier** — total race, menang, podium, pole, fastest lap, gelar dunia
+- Set driver favorit ⭐
+
+### 📚 F1 Glossary
+- 20+ istilah F1 dalam Bahasa Indonesia & English
+- Search real-time
+- Penjelasan lengkap setiap istilah
+
+### ⚙️ Setting
+- **4 Tema**: Dark, Carbon, Light Sports, Neon
+- **Race Weekend Mode** — tema berubah otomatis saat race weekend
+- **Timezone**: WIB / WITA / WIT
+- **Bahasa**: Indonesia / English
+- **Notifikasi**: Pengingat 30 menit sebelum setiap sesi
+
+---
+
+## 📸 Screenshot
+
+> *(tambahkan screenshot app di sini)*
+
+---
+
+## 🛠️ Development
+
+### Tech Stack
+| Layer | Technology |
+|-------|-----------|
+| Framework | React Native + Expo Router |
+| Build | EAS Build |
+| Data | Jolpica API (Ergast) |
+| Cuaca | Open-Meteo API |
+| Notifikasi | Expo Notifications |
+| Storage | AsyncStorage |
+
+### Setup
 
 ```bash
-npm run reset-project
+# Clone repo
+git clone https://github.com/leviar/f1-hub-mobile.git
+cd f1-hub-mobile
+
+# Install dependencies
+npm install
+
+# Start development
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### Build APK
 
-## Learn more
+```bash
+# Preview APK (internal testing)
+eas build --profile preview --platform android
 
-To learn more about developing your project with Expo, look at the following resources:
+# Production APK
+eas build --profile production --platform android
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Struktur Project
 
-## Join the community
+```
+f1-mobile/
+├── app/
+│   ├── (tabs)/
+│   │   ├── index.tsx          # Home
+│   │   ├── standings.tsx      # Klasemen
+│   │   ├── calendar.tsx       # Kalender
+│   │   ├── drivers.tsx        # Driver
+│   │   ├── settings.tsx       # Setting
+│   │   ├── glossary.tsx       # F1 Glossary
+│   │   └── race/[round].tsx   # Race Detail
+│   └── _layout.tsx
+├── components/
+│   ├── ThemeCard.tsx
+│   ├── BgDecoration.tsx
+│   └── FlagBadge.tsx
+├── lib/
+│   ├── api.ts                 # API calls & utils
+│   ├── theme.ts               # Theme system
+│   ├── settings.ts            # Settings types
+│   ├── SettingsContext.tsx    # Global settings
+│   └── notifications.ts      # Push notifications
+└── assets/
+```
 
-Join our community of developers creating universal apps.
+---
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🗓️ Changelog
+
+Lihat [CHANGELOG.md](CHANGELOG.md) untuk riwayat lengkap update.
+
+---
+
+## 📄 License
+
+[MIT](LICENSE) © 2026 LeviAR
+
+---
+
+<div align="center">
+  Dibuat dengan ❤️ untuk komunitas F1 Indonesia 🇮🇩
+</div>
