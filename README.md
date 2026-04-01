@@ -57,16 +57,16 @@
 
 ### 👤 Driver
 - Profil lengkap semua driver 2026
-- **Statistik Karier** — total race, menang, podium, pole, fastest lap, gelar dunia
+- **Statistik Karier** — total race, menang, podium, pole, fastest lap
 - Set driver favorit ⭐
 
 ### 📚 F1 Glossary
-- 20+ istilah F1 dalam Bahasa Indonesia & English
+- 200+ istilah F1 dalam Bahasa Indonesia & English
 - Search real-time
 - Penjelasan lengkap setiap istilah
 
 ### ⚙️ Setting
-- **4 Tema**: Dark, Carbon, Light Sports, Neon
+- **4 Tema**: Dark, Carbon, Light Sports, Neon, Steel Blue, Midnight Cyan
 - **Race Weekend Mode** — tema berubah otomatis saat race weekend
 - **Timezone**: WIB / WITA / WIT
 - **Bahasa**: Indonesia / English
@@ -76,7 +76,44 @@
 
 ## 📸 Screenshot
 
-> *(tambahkan screenshot app di sini)*
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="assets/screenshots/f1-hub-home.jpg" width="180" alt="Home" />
+        <br /><sub><b>🏠 Home</b></sub>
+      </td>
+      <td align="center">
+        <img src="assets/screenshots/f1-hub-klasemen.jpg" width="180" alt="Klasemen" />
+        <br /><sub><b>🏆 Klasemen</b></sub>
+      </td>
+      <td align="center">
+        <img src="assets/screenshots/f1-hub-kalender.jpg" width="180" alt="Kalender" />
+        <br /><sub><b>📅 Kalender</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="assets/screenshots/f1-hub-driver.jpg" width="180" alt="Driver" />
+        <br /><sub><b>👤 Driver</b></sub>
+      </td>
+      <td align="center">
+        <img src="assets/screenshots/f1-hub-driver-detail.jpg" width="180" alt="Driver Detail" />
+        <br /><sub><b>👤 Driver Detail</b></sub>
+      </td>
+      <td align="center">
+        <img src="assets/screenshots/f1-hub-race-detail.jpg" width="180" alt="Race Detail" />
+        <br /><sub><b>🏁 Race Detail</b></sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" colspan="3">
+        <img src="assets/screenshots/f1-hub-glossary.jpg" width="180" alt="F1 Glossary" />
+        <br /><sub><b>📚 F1 Glossary</b></sub>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ---
 
