@@ -22,7 +22,7 @@ import {
 } from '../../lib/notifications';
 import { AppTheme } from '../../lib/settings';
 
-const APP_VERSION = '1.4.8';
+const APP_VERSION = '1.0.0';
 const BUILD_CODE = '2026.03';
 
 const THEMES: { key: AppTheme; label: string; desc: string; bg: string; accent: string; border: string }[] = [

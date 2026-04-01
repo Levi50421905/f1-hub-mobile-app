@@ -4,7 +4,7 @@
     "slug": "f1-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/AppIcon_F1Hub.png",
+    "icon": "./assets/images/f1hubi.png",
     "scheme": "f1mobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,7 +14,7 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#0a0a0a",
-        "foregroundImage": "./assets/images/AppIcon_F1Hub.png"
+        "foregroundImage": "./assets/images/f1hubi.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
