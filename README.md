@@ -1,11 +1,11 @@
 # F1HUB Mobile 🏎️
 
 <div align="center">
-  <img src="assets/images/icon.png" width="120" alt="F1 Hub Logo" />
+  <img src="assets/images/AppIcon_F1Hub.png" width="120" alt="F1 Hub Logo" />
   
   <h3>Aplikasi F1 terlengkap untuk penggemar Formula 1 Indonesia</h3>
 
-  ![Version](https://img.shields.io/badge/version-1.4.8-e10600?style=flat-square)
+  ![Version](https://img.shields.io/badge/version-1.0.0-e10600?style=flat-square)
   ![Platform](https://img.shields.io/badge/platform-Android-brightgreen?style=flat-square)
   ![Built with](https://img.shields.io/badge/built%20with-Expo-000020?style=flat-square&logo=expo)
   ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
@@ -19,9 +19,11 @@
 
 | Versi | Tanggal | Link |
 |-------|---------|------|
-| v1.4.8 (Latest) | 30 Mar 2026 | [Download APK](https://github.com/leviar/f1-hub-mobile/releases/latest) |
+| v1.0.0 (Latest) | 31 Mar 2026 | [Download APK](https://github.com/Levi50421905/f1-hub-mobile/releases/latest) |
 
-> **Install:** Aktifkan *"Install from unknown sources"* di pengaturan HP sebelum install.
+> **Cara Install:** Aktifkan *"Install dari sumber tidak dikenal"* di pengaturan HP sebelum install APK.
+
+> **Requirements:** Android 8.0+ · Koneksi internet
 
 ---
 
@@ -49,9 +51,9 @@
 - Jadwal semua sesi (FP1, FP2, FP3, Qualifying, Race)
 - Hasil Race dengan podium 🥇🥈🥉
 - Hasil Qualifying (Q1/Q2/Q3)
-- Hasil Sprint & Sprint Qualifying (khusus sprint weekend)
+- Hasil Sprint (khusus sprint weekend)
 - Cuaca sirkuit real-time
-- Status sesi (selesai / akan datang)
+- Status sesi selesai / akan datang
 
 ### 👤 Driver
 - Profil lengkap semua driver 2026
@@ -81,6 +83,7 @@
 ## 🛠️ Development
 
 ### Tech Stack
+
 | Layer | Technology |
 |-------|-----------|
 | Framework | React Native + Expo Router |
@@ -94,7 +97,7 @@
 
 ```bash
 # Clone repo
-git clone https://github.com/leviar/f1-hub-mobile.git
+git clone https://github.com/Levi50421905/f1-hub-mobile.git
 cd f1-hub-mobile
 
 # Install dependencies

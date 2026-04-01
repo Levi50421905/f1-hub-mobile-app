@@ -2,9 +2,9 @@
   "expo": {
     "name": "F1 Hub",
     "slug": "f1-mobile",
-    "version": "1.4.8",
+    "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/Gemini_Generated_Image_7zh45b7zh45b7zh4.png",
+    "icon": "./assets/images/AppIcon_F1Hub.png",
     "scheme": "f1mobile",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -14,7 +14,7 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#0a0a0a",
-        "foregroundImage": "./assets/images/Gemini_Generated_Image_7zh45b7zh45b7zh4.png"
+        "foregroundImage": "./assets/images/AppIcon_F1Hub.png"
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
@@ -28,14 +28,14 @@
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/AppIcon_F1Hub.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/AppIcon_F1Hub.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#0a0a0a",
@@ -47,7 +47,7 @@
       [
         "expo-notifications",
         {
-          "icon": "./assets/images/icon.png",
+          "icon": "./assets/images/AppIcon_F1Hub.png",
           "color": "#e10600",
           "sounds": []
         }
