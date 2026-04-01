@@ -19,7 +19,7 @@
 
 | Versi | Tanggal | Link |
 |-------|---------|------|
-| v1.0.0 (Latest) | 31 Mar 2026 | [Download APK](https://github.com/Levi50421905/f1-hub-mobile/releases/latest) |
+| v1.0.0 (Latest) | 31 Mar 2026 | [Download APK](https://github.com/Levi50421905/f1-hub-mobile-app/releases/download/v1.0.0/f1-hub-v1.0.0.apk) |
 
 > **Cara Install:** Aktifkan *"Install dari sumber tidak dikenal"* di pengaturan HP sebelum install APK.
 
@@ -80,35 +80,35 @@
   <table>
     <tr>
       <td align="center">
-        <img src="assets/screenshots/f1-hub-home.jpg" width="180" alt="Home" />
+        <img src="assets/images/f1-hub-home.jpg" width="180" alt="Home" />
         <br /><sub><b>🏠 Home</b></sub>
       </td>
       <td align="center">
-        <img src="assets/screenshots/f1-hub-klasemen.jpg" width="180" alt="Klasemen" />
+        <img src="assets/images/f1-hub-klasemen.jpg" width="180" alt="Klasemen" />
         <br /><sub><b>🏆 Klasemen</b></sub>
       </td>
       <td align="center">
-        <img src="assets/screenshots/f1-hub-kalender.jpg" width="180" alt="Kalender" />
+        <img src="assets/images/f1-hub-kalender.jpg" width="180" alt="Kalender" />
         <br /><sub><b>📅 Kalender</b></sub>
       </td>
     </tr>
     <tr>
       <td align="center">
-        <img src="assets/screenshots/f1-hub-driver.jpg" width="180" alt="Driver" />
+        <img src="assets/images/f1-hub-driver.jpg" width="180" alt="Driver" />
         <br /><sub><b>👤 Driver</b></sub>
       </td>
       <td align="center">
-        <img src="assets/screenshots/f1-hub-driver-detail.jpg" width="180" alt="Driver Detail" />
+        <img src="assets/images/f1-hub-driver-detail.jpg" width="180" alt="Driver Detail" />
         <br /><sub><b>👤 Driver Detail</b></sub>
       </td>
       <td align="center">
-        <img src="assets/screenshots/f1-hub-race-detail.jpg" width="180" alt="Race Detail" />
+        <img src="assets/images/f1-hub-race-detail.jpg" width="180" alt="Race Detail" />
         <br /><sub><b>🏁 Race Detail</b></sub>
       </td>
     </tr>
     <tr>
       <td align="center" colspan="3">
-        <img src="assets/screenshots/f1-hub-glossary.jpg" width="180" alt="F1 Glossary" />
+        <img src="assets/images/f1-hub-glossary.jpg" width="180" alt="F1 Glossary" />
         <br /><sub><b>📚 F1 Glossary</b></sub>
       </td>
     </tr>
